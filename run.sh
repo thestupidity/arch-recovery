@@ -59,4 +59,7 @@ sleep 3
 systemctl restart sshd
 sleep 2
 
+passwd root
+sleep 1
+
 echo "Recovery environment ready."
