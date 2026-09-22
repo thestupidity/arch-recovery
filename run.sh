@@ -37,7 +37,7 @@ sleep 2
 mount -o subvol=@log /dev/mapper/crypt0 /mnt/var/log
 sleep 2
 
-mount -o subvol=@snpshots /dev/mapper/crypt0 /mnt/.snapshots
+mount -o subvol=@snapshots /dev/mapper/crypt0 /mnt/.snapshots
 sleep 2
 
 mount /dev/sda2 /mnt/boot
