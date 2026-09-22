@@ -7,7 +7,7 @@ echo "Preparing recovery environment."
 iwctl station wlan0 connect "Home sweet home"
 sleep 3
 
-reflector --verbose --protocol https --sort --latest 5 --country philippines --save /etc/pacman.d/mirrorlist
+reflector --verbose --protocol https --sort rate --latest 5 --country Japan --save /etc/pacman.d/mirrorlist
 sleep 2
 
 pacman -Syy --noconfirm wireguard-tools
@@ -45,7 +45,6 @@ sleep 2
 
 mount /dev/sda2 /mnt/boot
 sleep 2
-
 
 cp /mnt/etc/wireguard/wg0.conf /etc/wireguard/wg0.conf
 sleep 1
