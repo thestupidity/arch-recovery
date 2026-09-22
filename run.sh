@@ -28,9 +28,6 @@ sleep 2
 mount -o subvol=@srv /dev/mapper/crypt0 /mnt/srv
 sleep 2
 
-mount -o subvol=@libvirt /dev/mapper/crypt0 /mnt/var/lib/libvirt
-sleep 2
-
 mount -o subvol=@cache /dev/mapper/crypt0 /mnt/var/cache
 sleep 2
 
@@ -38,9 +35,6 @@ mount -o subvol=@tmp /dev/mapper/crypt0 /mnt/var/tmp
 sleep 2
 
 mount -o subvol=@log /dev/mapper/crypt0 /mnt/var/log
-sleep 2
-
-mount -o subvol=@snapshots /dev/mapper/crypt0 /mnt/.snapshots
 sleep 2
 
 mount /dev/sda1 /mnt/boot
