@@ -13,7 +13,7 @@ sleep 2
 pacman -Syy --noconfirm wireguard-tools
 sleep 2
 
-cryptsetup open /dev/sda3 crypt0
+cryptsetup open /dev/sda2 crypt0
 sleep 3
 
 mount -o subvol=@ /dev/mapper/crypt0 /mnt
@@ -43,7 +43,7 @@ sleep 2
 mount -o subvol=@snapshots /dev/mapper/crypt0 /mnt/.snapshots
 sleep 2
 
-mount /dev/sda2 /mnt/boot
+mount /dev/sda1 /mnt/boot
 sleep 2
 
 cp /mnt/etc/wireguard/wg0.conf /etc/wireguard/wg0.conf
